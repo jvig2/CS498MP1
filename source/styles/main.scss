@@ -1,0 +1,529 @@
+$heightHead: 110px;
+$anim_a: 0.6s;
+$anim_b: 0.3s;
+
+ul.a {
+    list-style-type: square;
+}
+
+div.vertical-center-box {
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+    &.vertical-center-left {
+        justify-content: flex-start !important;
+    }
+    &#left-bottom-box{
+        height: $heightHead;
+        justify-content: center;
+    }
+}
+
+.modal-div {
+    display: none;
+    position: fixed;
+    z-index: 10000;
+    padding-top: 100px;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: #000000;
+    background-color: rgba(0,0,0,0.4);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.modal-content {
+    position: relative;
+    background-color: #000000;
+    padding: 0px;
+    width: 75%;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+    -webkit-animation-name: animate-modal;
+    animation-duration: 0.4s;
+    img {
+        width: 100%
+    }
+}
+
+@-webkit-keyframes animate-modal {
+    from {top: -300px; opacity: 0}
+    to {top: 0px; opacity: 1}
+}
+
+@keyframes animate-modal {
+    from {top: -300px; opacity: 0}
+    to {top: 0px; opacity: 1}
+}
+
+div.top-box {
+    width: 100%;
+    height: 325px;
+}
+
+div.tux-box {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+    
+header.page-header {
+    text-align: center;
+}
+
+$blue: #4194f4;
+$purple: #7641f4;
+$pink: #4441f4;
+$white: #f44242;
+$red: #f44242;
+
+hr {
+    float: center;
+    &.divider {
+        border: 0;
+        width: 50%;
+        height: 1px;
+        background-color: $red;
+        margin-top: 64px;
+        margin-bottom: 64px;
+    }
+}
+
+div#social-media-div {
+    text-align: center;
+    h2 {
+        font-size: 48px;
+    }
+
+    h3 {
+        font-size: 36px;
+    }
+
+    h4 {
+        font-size: 24px;
+    }
+}
+
+ul#social-media-list {
+    list-style: none;
+}
+
+div.back-box {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/4/4b/Poker_cards_and_chips.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height: 250px;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+h2#last-convincing {
+    text-align: center;
+    font-size: 48px;
+}
+
+.slideRight{
+	animation-name: slideRight;
+	-webkit-animation-name: slideRight;	
+
+	animation-duration: .1s;	
+	-webkit-animation-duration: .1s;
+
+	animation-timing-function: ease-in-out;	
+	-webkit-animation-timing-function: ease-in-out;		
+
+	visibility: visible !important;	
+}
+
+@keyframes slideRight {
+	0% {
+		transform: translateX(0%);
+	}			
+	100% {
+		transform: translateX(100%);
+	}	
+}
+
+@-webkit-keyframes slideRight {
+	0% {
+		-webkit-transform: translateX(0%);
+	}			
+	100% {
+		-webkit-transform: translateX(100%);
+	}
+}
+
+.slideLeft{
+    animation-name: slideLeft;
+    -webkit-animation-name: slideLeft;  
+
+    animation-duration: .1s;    
+    -webkit-animation-duration: .1s;
+
+    animation-timing-function: ease-in-out; 
+    -webkit-animation-timing-function: ease-in-out;     
+
+    visibility: visible !important; 
+}
+
+@keyframes slideLeft {
+    0% {
+        transform: translateX(0%);
+    }   
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@-webkit-keyframes slideLeft {
+    0% {
+        -webkit-transform: translateX(0%);
+    }           
+    100% {
+        -webkit-transform: translateX(-100%);
+    }
+}
+
+.fromRight{
+    animation-name: fromRight;
+    -webkit-animation-name: fromRight;  
+
+    animation-duration: .1s;    
+    -webkit-animation-duration: .1s;
+
+    animation-timing-function: ease-in-out; 
+    -webkit-animation-timing-function: ease-in-out;     
+
+    visibility: visible !important; 
+}
+
+@keyframes fromRight {
+    0% {
+        transform: translateX(100%);
+    }           
+    100% {
+        transform: translateX(0%);
+    }   
+}
+
+@-webkit-keyframes fromRight {
+    0% {
+        -webkit-transform: translateX(100%);
+    }           
+    100% {
+        -webkit-transform: translateX(0%);
+    }
+}
+
+.fromLeft{
+	animation-name: fromLeft;
+	-webkit-animation-name: fromLeft;	
+
+	animation-duration: .1s;	
+	-webkit-animation-duration: .1s;
+
+	animation-timing-function: ease-in-out;	
+	-webkit-animation-timing-function: ease-in-out;		
+
+	visibility: visible !important;	
+}
+
+@keyframes fromLeft {
+	0% {
+		transform: translateX(-100%);
+	}	
+	100% {
+		transform: translateX(0%);
+	}
+}
+
+@-webkit-keyframes fromLeft {
+	0% {
+		-webkit-transform: translateX(-100%);
+	}			
+	100% {
+		-webkit-transform: translateX(0%);
+	}
+}
+
+div.vertical-center-box {
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+    &.vertical-center-left {
+        justify-content: flex-start !important;
+    }
+    &#left-bottom-box{
+        height: $heightHead;
+        justify-content: center;
+    }
+}
+
+.modal-div {
+    display: none;
+    position: fixed;
+    z-index: 10000;
+    padding-top: 100px;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.modal-content {
+    position: relative;
+    background-color: rgba(0,0,0,0);
+    padding: 0px;
+    width: 75%;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+    -webkit-animation-name: animate-modal;
+    animation-duration: 0.4s;
+    img {
+        width: 100%
+    }
+}
+
+@-webkit-keyframes animate-modal {
+    from {top: -300px; opacity: 0}
+    to {top: 0px; opacity: 1}
+}
+
+@keyframes animate-modal {
+    from {top: -300px; opacity: 0}
+    to {top: 0px; opacity: 1}
+}
+
+.shrink {
+    -webkit-transition: height $anim_a;
+    -moz-transition: height $anim_a;
+    -ms-transition: height $anim_a;
+    -o-transition: height $anim_a;
+    transition: height $anim_a;
+}
+
+.gone {
+    height: 0px !important;
+}
+
+.hide {
+    visibility: 'hidden';
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    background-color: pink;
+}
+
+h1#logo-title {
+    text-align: left;
+    margin-right: auto;
+    font-size: 48px
+}
+
+.close {
+    font-size: 96px;
+    z-index: 25000;
+    float: right;
+    margin-right: 5%;
+    color: $white;
+}
+
+.size-48 {
+    font-size: 48px;
+}
+
+.size-72 {
+    font-size: 72px;
+}
+
+.size-96 {
+    font-size: 96px;
+}
+
+.size-128 {
+    font-size: 128px;
+}
+
+div.main-body {
+    width: 100%;
+
+    text-align: center;
+
+    div.column-left { float: left; width: 40%; margin-left: 5%; margin-right: 5%; }
+    div.column-right { float: right; width: 40%; margin-left: 5%; margin-right: 5%; }
+
+    div.carousel-div {
+        text-align:  center;
+        height: 500px;
+
+        div.column-left-skinny { 
+            float: left; 
+            width: 10%; 
+            height: 100%;
+            margin: auto;
+            text-align: center;
+            button {
+                margin-right: auto;
+                margin-left: auto;
+                width: 100%;
+                height: 25%;
+            }
+        }
+
+        div.column-right-skinny { 
+            float: right; 
+            width: 10%;
+            height: 100%;
+            margin: auto; 
+            text-align: center;
+            button {
+                margin-right: auto;
+                margin-left: auto;
+                width: 100%;
+                height: 25%;
+            }
+        }
+
+        div.column-middle-wide { 
+            text-align: left;
+            display: inline-block; 
+            width: 80%; 
+            height: 100%;
+            overflow: hidden;
+            img {
+                height: 100%;
+                width: 100%;
+            }
+        }
+    }
+
+    article.main-content-article {
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        width: 60%;
+
+        header {
+            // width: 60%
+        }
+        h1 {
+            font-size: 48px;
+        }
+
+        h3 {
+            font-size: 32px;
+            
+        }
+    }
+
+    section.main-content-section {
+        img#normal-factory-pic {
+            height: auto;
+            width: 25%;
+            &:hover {
+                border: blue 1px dashed ;
+            }
+        }
+    }
+
+    div.double-column-div {
+        background: $white;
+        padding: 20px;
+        height: 500px;
+
+        h2 {
+            font-size: 32px;
+        }
+
+        h3 {
+            font-size: 28px;
+        }
+    }
+}
+
+nav.page-nav-bar {
+    z-index: 999;
+    padding-right: 16px;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    background: $purple;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    color: $white;
+
+    div {
+        height: 196px;
+        &.nav-constrained {
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+
+        &.column-left-wide{ float: left; width: 35%; }
+        &.column-right-wide{ float: right; width: 55%; }
+        &.column-center-skinny{ display: inline-block; width: 10%; }
+    }
+  
+    ul {
+        margin: 0px;
+        padding: 0px;
+        text-align: center;
+        width: 100%;
+        height: 0px;
+        list-style: none;
+        li {
+            vertical-align: middle;
+            line-height: $heightHead;
+            float: left;
+            width: 23%;
+            height: $heightHead; 
+            
+            -webkit-transition: width $anim_b;
+            -moz-transition: width $anim_b;
+            -ms-transition: width $anim_b;
+            -o-transition: width $anim_b;
+            transition: width $anim_b;
+            
+            &.active {
+                background-color: $blue;
+                color: $pink;
+            }
+
+            &.selectable {
+
+            }
+
+            &.no-width {
+                width: 0%;
+            }
+
+            &.not-selectable {
+                width: 10%;
+            }
+        }
+    }
+    div.pic-box {
+        font-size: 48px;
+        overflow: hidden;
+    }
+}

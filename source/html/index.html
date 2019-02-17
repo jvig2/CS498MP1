@@ -1,16 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MP1 Starter</title>
+    <script src="https://use.fontawesome.com/461af3726b.js"></script>
 </head>
 
-<body>
+<body id="page-body">
+    <nav class="page-nav-bar" id="nav-bar">
+        <div class="logo-box" id="nav-box">
+            <div class="nav-constrained shrink">
+                <div class="column-right-wide shrink">
+                    <div class="vertical-center-box vertical-center-left shrink">
+                        <h1 id="logo-title" class="shrink"> Jaskirat Vig</h1>
+                    </div>
+                </div>
+                <div class="column-left-wide shrink">
+                    <div class="vertical-center-box shrink">
+                        <i class="fa fa-user-o shrink size-128" aria-hidden="true" id="svg"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <ul> 
+            <li class="no-width selectable" id="bottom">
+                <div class="vertical-center-box"  id="left-bottom-box">
+                    <i class="fa fa-user-o not-selectable size-48" aria-hidden="true" id="svg-small">      &#124;</i>
+                </div>
+            </li>
+            <li class="selectable active" id="reviews-li">Technical Experience</li>
+            <li class="selectable" id="sponsors-li">Pictures</li>
+            <li class="selectable" id="video-li">Dance</li>
+            <li class="selectable" id="stay-in-contact-li">Contact Me</li>
+        </ul>
+    </nav>
 
-    <h2>Welcome to MP1!</h2>
+    <div class="top-box">
+    </div>
 
+    <div class="modal-div vertical-center-box" id="factory-modal-pic">
+        <!-- from w3schools modal tutorial -->
+        <span class="close" id="close-button">&times;</span>
+
+        <div class="modal-content">
+            <img src="https://i.imgur.com/vqYUwLq.jpg">
+        </div>
+    </div>
+
+    <div class="main-body">
+        <article class="main-content-article" id="product-article">
+            <a href="#page-top"></a>
+            <header class="main-content-header" id="product-header">
+                <h1>Who am I?</h1>
+                <h3>I'm an incredibly passionate and driven individual who strives for success in dancing, DJ'ing, and software development</h3>
+            </header>
+            
+            <section class="main-content-section" id="product-factory-pic">
+                <img src="https://i.imgur.com/vqYUwLq.jpg" id="normal-factory-pic">
+                <h6>Please click on this picture to view fullscreen.</h6>
+                <h2>I'm currently studying Computer Engineering at University of Illinois Urbana-Champaign</h2>
+            </section>
+
+            <br>
+            <hr class="divider">
+            <br>
+
+            <section class="main-content-section" id="review-section">
+                <a href="#reviews"></a>
+                <h2>Technical Experience</h2>
+                <div class="double-column-div vertical-center-box">
+                    <div class="column-left" id="left-column-reviews">
+                        <h2>TD Ameritrade</h2>
+                        <h3>Business Analyst Intern</h3>
+                        <p>
+                        	<ul class="a">
+                        		<li> Developed customizable forms using Microsoft SharePoint and InfoPath to help organize projects </li>
+								<li> Communicated client's business requirements to software developers by writing a Business Requirements Document (BRD) to set standards for code </li>
+								<li> Contructed an algorithm to prioritize projects based on resources required, cost, urgency etc. </li>
+                        	</ul>
+                    	</p>
+                    </div>
+
+                    <div class="column-right" id="right-column-reviews">
+                        <h2>W. W. Grainger</h2>
+                        <h3>Back-end Developer Intern</h3>
+                        <p>
+                        	<ul class="a">
+                        		<li> Created a new component controller to connect the back-end to front-end via a CMS page for grainger.com's Bulk Order Pad, a stream of income that generates 20$\%$ of Grainger's online revenue
+								<li> Simplified the existing Bulk Order Pad controller by 10 times in Java to parse data for "Add-to-Cart" and "Add-to-List" models on the Bulk Order Pad that accepts Ajax Requests and returns JSON payloads
+								<li> Ensured backwards compatibility of the Bulk Order Pad by implementing a feature toggle with an .impex file
+								<li> Completed stories on the Checkout Agile Sprint Team to solve software issues in Java, Handlebars and JSP
+								<li> Wrote JUnit tests to ensure code was well tested using Mockito
+							</ul>
+						</p>
+                    </div>
+                </div>
+            </section>
+
+            <br>
+            <hr class="divider">
+            <br>
+
+            <footer id="sponsor-footer">
+                <a href="#sponsor"></a>
+                <h2>Check out some pictures from my last dance competition!</h2>
+                <div class="carousel-div">
+                    <div class="column-left-skinny vertical-center-box">
+                        <button class="left-button" id="left-carousel-button">
+                            <i class="fa fa-angle-double-left size-48" aria-hidden="true"></i>
+                        </button>
+                    </div>
+
+                    <div class="column-middle-wide vertical-center-box" id="carousel-box">
+                        <img src="assets/33783381576_e884137181_o.jpg" id="carousel-pic">
+                    </div>
+                    
+                    <div class="column-right-skinny vertical-center-box">
+                        <button class="right-button" id="right-carousel-button">
+                            <i class="fa fa-angle-double-right size-48" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </div>
+            </footer>
+        </article>
+
+        <br>
+        <hr class="divider">
+        <br>
+
+        <h2 id="last-convincing">Here's a video of our performance at Got Bhangra!</h2>
+
+        <!-- background image here -->
+        <div class="back-box" id="video-container-picture-box">
+            <a href="#video"></a>
+            <div height="512px" width="80%" overflow="hidden">
+                <video height="auto" width="70%" src="assets/Bhangra.mp4" autoplay loop="loop"></video>
+            </div>
+        </div>
+
+        <br>
+        <hr class="divider">
+        <br>
+
+        <div id="social-media-div">
+            <a href="#social-media"></a>
+            <h2>Please click on the icon to view my LinkedIn</h2>
+            <div>
+                 <i class="fa fa-linkedin-square size-96" aria-hidden="true" onclick="window.open('https://www.linkedin.com/in/jaskirat-vig/')"></i>
+            </div>
+        </div>
+    </div>
     <script src="bundle.js" type="text/javascript"></script>
 </body>
 
